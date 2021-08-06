@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,10 +38,12 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="t05-9h-rUF" secondAttribute="trailing" constant="30" id="7b9-Ry-hlr"/>
                                     <constraint firstItem="slh-U1-OUP" firstAttribute="centerY" secondItem="AQP-9g-ohv" secondAttribute="centerY" id="A3l-W4-1dc"/>
+                                    <constraint firstItem="slh-U1-OUP" firstAttribute="centerX" secondItem="AQP-9g-ohv" secondAttribute="centerX" id="Art-PX-crO"/>
                                     <constraint firstItem="t05-9h-rUF" firstAttribute="leading" secondItem="AQP-9g-ohv" secondAttribute="leading" constant="30" id="JHd-ha-6Sg"/>
                                     <constraint firstItem="slh-U1-OUP" firstAttribute="leading" secondItem="AQP-9g-ohv" secondAttribute="leading" id="KFK-sS-2W2"/>
                                     <constraint firstItem="t05-9h-rUF" firstAttribute="top" secondItem="slh-U1-OUP" secondAttribute="bottom" constant="30" id="Swe-WK-snI"/>
                                     <constraint firstAttribute="trailing" secondItem="slh-U1-OUP" secondAttribute="trailing" id="Xic-rw-8bv"/>
+                                    <constraint firstItem="t05-9h-rUF" firstAttribute="centerX" secondItem="AQP-9g-ohv" secondAttribute="centerX" id="bNG-rJ-G8X"/>
                                     <constraint firstItem="slh-U1-OUP" firstAttribute="centerY" secondItem="AQP-9g-ohv" secondAttribute="centerY" id="jl7-eq-N3A"/>
                                 </constraints>
                             </view>

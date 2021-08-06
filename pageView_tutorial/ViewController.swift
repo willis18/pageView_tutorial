@@ -24,13 +24,13 @@ class ViewController: UIViewController,  FSPagerViewDataSource, FSPagerViewDeleg
             //무한 스크롤
             self.myPagerView.isInfinite = true
             //자동 스크롤
-            self.myPagerView.automaticSlidingInterval = 4.0
+            //self.myPagerView.automaticSlidingInterval = 4.0
         }
     }
     @IBOutlet var myPageControl: FSPageControl!{
         didSet{
             self.myPageControl.numberOfPages = self.imageNames.count
-            self.myPageControl.contentHorizontalAlignment = .right
+            self.myPageControl.contentHorizontalAlignment = .center
             self.myPageControl.itemSpacing = 16
             self.myPageControl.interitemSpacing = 16
         }
@@ -65,13 +65,16 @@ class ViewController: UIViewController,  FSPagerViewDataSource, FSPagerViewDeleg
     @IBAction func leftBtnClicked(_ sender: UIButton) {
         self.myPageControl.currentPage = self.myPageControl.currentPage - 1
         self.myPagerView.scrollToItem(at: self.myPageControl.currentPage, animated: true)
+        
     }
     @IBAction func rightBtnClicked(_ sender: UIButton) {
         if(self.myPageControl.currentPage == self.imageNames.count - 1){
             self.myPageControl.currentPage = 0
         }else{
             self.myPageControl.currentPage = self.myPageControl.currentPage + 1
+        }
         self.myPagerView.scrollToItem(at: self.myPageControl.currentPage, animated: true)
+        
     }
     
     //MARK: - FSPagerView delegate
